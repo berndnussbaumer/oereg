@@ -25,6 +25,15 @@ In der Datei "config.php" werden Parameter gesetzt:
 - $guest_delete: Auf der Gästeliste können Einträge markiert und gelöscht werden.
 - $dsvgo_text: Der DSVGO Text, der Kunden angezeigt wird.
 
+	Falls die Mail Aktivierung eingeschlatet ist (wird in phpmailer/send_activation_mail.php versendet):
+	- $staette_mail_server: Mail Server, von dem das Aktivierungsmail versendet wird.
+	- $staette_mail_user: User des Mailservers
+	- $staette_mail_passwd: Passwort des Users
+	- $staette_mail_from: From Adresse 
+	- $staette_mail_from_name: Name der From Adresse 
+	- $staette_mail_reply: (z.B. no-reply@xy.com)
+
+
 In der Datei "set_db_vars.php" muss der Datenbankzugriff hinterlegt werden.
 - $oereg_sec_check: Der Wert dieser Variablen muss dem in den aufrufenden Skripten entsprechen.
 - $myServer = "localhost": Serveradresse
@@ -44,4 +53,11 @@ Beim Abrufen dieser Daten ist das Passwort notwendig. Damit wird der Private-Key
 Somit kann ausschließlich mit dem Passwort auf die Daten zugegriffen werden. 
 Bei Verlust des Passworts ist kein Zugriff auf die verschlüsselten Gästedaten möglich.
 
+In der Datei "oereg.sql" ist ein Trigger enthalten, der die Gäastedaten automatisch nach 4 Wochen löscht.
 
+Verwendete Libraries:
+
+Diese sind alle open-source. Die Lizenzen liegen in den Unterverzeichnissen.
+- PHPMailer
+- PHPQRCode
+- PHPSecLib
