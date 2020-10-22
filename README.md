@@ -10,7 +10,7 @@ Datenbank:
 Es liegt die Datei oereg.sql bei. Diese am mysql Server ausführen, damit werden die benötigten Tabellen angelegt.
 
 PHP Dateien:
-Alle anderen Dateien ins Root Verzeichnis des Servers kopieren.
+Alle anderen Dateien ins Root Verzeichnis des Servers kopieren. Wahlweise kann auch ein Unterverzeichnis verwendet werden. Das kann in der Konfiguration eingestellt werden.
 
 Konfiguration:
 In der Datei "config.php" werden Parameter gesetzt:
