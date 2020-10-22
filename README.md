@@ -1,5 +1,5 @@
 # oereg
-Gästeregistrierung mit QR Code
+Österreichische Gästeregistrierung mit QR Code
 
 Installation:
 
